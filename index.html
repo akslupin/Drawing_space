@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Draw! </title>
+        <script src="https://unpkg.com/paper@0.11.5/dist/paper-full.min.js"></script>
+        <script type="text/paperscript"
+        canvas="splatterPaint"
+        src="script.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="toolbar">
+            <button onclick="setShape('circle')">◯</button>
+            <button onclick="setShape('rectangle')">▭</button>
+            <button onclick="setShape('star')">★</button>
+            <button onclick="setShape('triangle')">△</button>
+            <button onclick="setShape('erase')">⌫</button>
+            <button onclick="clearCanvas()">🧹</button>
+        </div>
+            <a href="https://github.com/akslupin">🌸</a>
+        
+        <canvas id="splatterPaint" resize>
+        </canvas>
+    </body>
+</html>
